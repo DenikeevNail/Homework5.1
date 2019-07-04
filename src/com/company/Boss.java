@@ -6,7 +6,7 @@ public class Boss {
     private int health;
     private int damage;
     private int defence;
-    public static int [] defences = {1,2,3,4};
+
 
 
     public int getHealth() {
@@ -40,7 +40,7 @@ public class Boss {
     public void changeDefence() {
         Random r = new Random();
         int randomNumber = r.nextInt(4);
-        defences[0] = defences [randomNumber];
+        defence = defence * randomNumber;
     }
 }
 
